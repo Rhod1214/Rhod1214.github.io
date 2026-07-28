@@ -1,0 +1,208 @@
+/* ===========================
+   RHOD R. ASAN PORTFOLIO
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#FFD700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
+}
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:60px 10%;
+    min-height:90vh;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-text span{
+    color:#FFD700;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.hero img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    border:8px solid white;
+    object-fit:cover;
+    box-shadow:0 0 30px gold;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#FFD700;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* Section */
+
+.section{
+    padding:70px 10%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#FFD700;
+    font-size:40px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    transition:.4s;
+    backdrop-filter:blur(10px);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,.2);
+}
+
+.card h3{
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+/* Contact */
+
+.contact-info{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-item{
+    background:rgba(255,255,255,.1);
+    margin:15px 0;
+    padding:18px;
+    border-radius:12px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:rgba(0,0,0,.6);
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+}
+
+.hero img{
+    margin-top:30px;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+}
